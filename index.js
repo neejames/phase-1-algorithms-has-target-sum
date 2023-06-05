@@ -1,5 +1,14 @@
 function hasTargetSum(array, target) {
   // Write your algorithm here
+ for (let i=0; i<array.length; i++) {
+  for (let j=i+1; j<array.length; j++) {
+    if (array[i] + array[j] === target) {
+      return true;
+    }
+    
+  }
+  
+ }return false;
 }
 
 /* 
@@ -12,6 +21,9 @@ function hasTargetSum(array, target) {
 
 /*
   Add written explanation of your solution here
+  [a, b, c, d, e, f]g
+  a+()=g=true
+  a+()/=g=false
 */
 
 // You can run `node index.js` to view these console logs
